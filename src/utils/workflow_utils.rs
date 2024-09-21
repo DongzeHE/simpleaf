@@ -545,7 +545,7 @@ pub fn initialize_workflow<T: AsRef<Path>>(
 // Each SimpleafWorkflow represents a json
 /// Simpleaf Workflow record
 pub struct SimpleafWorkflow {
-    pub af_home_path: PathBuf,
+    // pub af_home_path: PathBuf,
 
     // This command queue contains all commands that need to be run
     pub cmd_queue: Vec<CommandRecord>,
@@ -995,7 +995,7 @@ impl WorkflowLog {
 /// It can be either a simpleaf command or an external command.
 pub struct CommandRecord {
     pub step: u64,
-    pub active: bool,
+    // pub active: bool,
     pub program_name: ProgramName,
     pub cmd: WFCommand,
     //pub simpleaf_cmd: Option<Commands>,
